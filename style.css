@@ -1,0 +1,359 @@
+:root{color-scheme:dark;--bg:#130d10;--panel:#251a1d;--panel2:#322225;--border:#65454a;--gold:#d6b374;--ink:#f7efe6;--mute:#bfaca4;--red:#683037;--bright:#b45b64;--ok:#b5d9b2;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}*{box-sizing:border-box}html,body{margin:0;height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer;color:var(--ink);background:#43282c;border:1px solid #8d6261;border-radius:11px;padding:9px 12px;min-width:0;touch-action:manipulation;transition:background .12s}button:hover:not(:disabled){background:#61343b}button:disabled{opacity:.4;cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}.primary{background:#71333d;border-color:#b57877;font-weight:750;color:#fff}.small-btn{padding:8px 11px;font-size:12px;white-space:nowrap}.pill{background:#543236;padding:7px 11px;border-radius:25px;color:var(--gold);font-size:13px}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.15em;color:var(--gold)}h1{font-size:clamp(22px,4vw,37px);margin:4px 0 7px;line-height:1.08}p{margin:6px 0 10px}small,.muted{color:var(--mute)}#app{height:100dvh;display:flex;flex-direction:column;overflow:hidden;max-width:1800px;margin:auto}.top{height:66px;flex:0 0 66px;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px clamp(12px,2.5vw,28px);background:linear-gradient(100deg,#2a171a,#3c1d25);border-bottom:1px solid #7b4d50}.brand{display:flex;align-items:center;gap:12px;min-width:0;cursor:pointer}.emblem{font-size:27px;display:grid;place-items:center;color:var(--gold);border:1px solid var(--gold);width:45px;height:45px;border-radius:12px}.brand-title{font-family:Georgia,serif;font-weight:700;letter-spacing:.025em;font-size:18px}.brand-title small{font:11px system-ui;color:var(--mute)}.top-actions{display:flex;align-items:center;gap:10px}.main{flex:1;min-height:0;overflow:hidden;padding:12px clamp(10px,1.7vw,24px) max(10px,env(safe-area-inset-bottom))}.panel{background:linear-gradient(145deg,var(--panel),#1c1417);border:1px solid var(--border);border-radius:15px}.menu{height:100%;display:flex;flex-direction:column;gap:12px;max-width:1120px;margin:0 auto}.menu-heading{text-align:center;flex:0 0 auto}.menu-heading p{color:var(--mute);font-size:13px}.menu-tiles{min-height:0;flex:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:12px}.menu-tile{display:flex;min-height:0;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:8px;background:linear-gradient(150deg,#311e24,#24181b);border:1px solid #79575d;position:relative}.menu-tile:hover{background:#50292e}.menu-icon{font-size:clamp(27px,4vw,44px)}.menu-title{font:700 clamp(17px,2vw,24px) Georgia,serif;color:#e8cfaa}.menu-description{color:#c6b5aa;font-size:12px}.menu-resume{font-size:10px;color:var(--gold);letter-spacing:.08em;font-weight:800}.menu-bottom{flex:0 0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--mute);gap:8px}.settings{padding:22px;max-width:700px;margin:auto;height:100%;overflow:auto}.settings p{line-height:1.5}.button-row{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.file-btn{display:inline-flex;align-items:center;background:#43282c;border:1px solid #8d6261;padding:10px 16px;border-radius:9px;cursor:pointer}.setup{height:100%;display:flex;flex-direction:column;gap:8px;min-height:0}.setup-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:0 0 auto}.setup-top>div{min-width:0}.setup-top h1{font-size:clamp(18px,2.5vw,27px)}.setup-options{flex:0 0 auto;padding:9px 13px}.two-cols,.three-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.three-cols{grid-template-columns:2fr 1fr 1fr;margin-top:7px}label{font-size:12px;color:var(--mute);font-weight:700;display:grid;gap:3px}select,input{color:var(--ink);background:#1a1317;border:1px solid #6d484f;border-radius:8px;padding:7px 9px;min-width:0;width:100%;height:34px}.roster-panel{flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden;padding:9px}.roster-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;flex:0 0 auto}.roster-heading input{width:min(220px,48%)}.section-title{font-size:12px;font-weight:800;letter-spacing:.07em;color:var(--gold)}.section-title span{color:var(--ink)}#rosterHere{min-height:0;flex:1;display:flex;flex-direction:column;gap:6px}.tabs{display:flex;gap:6px;flex:0 0 auto}.tab{flex:1;padding:5px 8px;font-size:12px;background:#24191a}.tab.active{background:var(--red);border-color:var(--gold);color:var(--gold)}.roster-viewport{overflow:auto;overscroll-behavior:contain;min-height:0;flex:1;scrollbar-width:thin}.portrait-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;padding:3px 2px}.portrait{padding:4px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;position:relative;background:#2f1e21;border:1px solid #6d4e50;border-radius:8px;min-width:0;min-height:0}.portrait.picked{border:2px solid var(--gold);background:#51313a}.pic{width:100%;aspect-ratio:5/6;position:relative;display:grid;place-items:center;background:linear-gradient(#39262e,#1a151a);border-radius:5px;overflow:hidden}.pic img{width:100%;height:100%;object-fit:contain;position:absolute;inset:0}.initial{font-size:19px;color:var(--gold)}.portrait-name{width:100%;padding-top:4px;font-size:clamp(9px,1.05vw,12px);line-height:1.14;min-height:2.3em;overflow-wrap:anywhere}.tick{position:absolute;right:3px;top:3px;background:#5b3930;border-radius:50%;color:#f9df9c;padding:0 4px;font-size:12px}.setup-bottom{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:2px}.setup-bottom>span{font-size:11px;color:var(--mute);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.setup-bottom button{white-space:nowrap}.game-screen{height:100%;display:flex;flex-direction:column;gap:8px;min-height:0}.game-top{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:8px}.game-name{font:700 17px Georgia,serif;color:var(--gold);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.game-name small{font:11px system-ui;color:var(--mute)}.game-main{min-height:0;flex:1;display:flex;flex-direction:column;gap:8px}.scene-wrap{flex:0 0 auto;min-height:0;height:min(46%,440px);border:1px solid #795257;border-radius:12px;overflow:hidden;background:#1b1118;display:flex;align-items:center;justify-content:center}#scene{display:block;height:100%;width:100%;object-fit:contain}.game-controls{flex:1;min-height:0;display:flex;flex-direction:column;padding:9px 12px;gap:7px}.turn-info{flex:0 0 auto}.notice{font-size:clamp(12px,1.45vw,16px);font-weight:650;color:#f0e8db;margin:5px 0}.actions-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;display:flex;flex-direction:column;gap:7px}.actions-scroll>button{width:100%}.speech{flex:0 0 auto;max-height:70px;overflow:auto;border-top:1px solid #513439;padding-top:5px;font-size:11px;line-height:1.3;color:#ceb6ab}.speech b{color:var(--gold)}.people{display:flex;flex:0 0 auto;gap:5px;max-height:41px;overflow:auto;scrollbar-width:thin}.person{display:flex;align-items:center;justify-content:space-between;flex:1 0 auto;gap:8px;border:1px solid #614347;background:#2b2022;padding:6px 9px;border-radius:8px;font-size:10px}.person strong{color:var(--gold)}.person.focus{border-color:var(--gold)}.person.out{opacity:.5}.dice-rolls{display:flex;flex-wrap:wrap;gap:6px}.roll-pill{display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid #583f45;border-radius:7px;background:#2e2228;padding:7px;min-width:140px;flex:1;font-size:12px}.roll-pill strong{font-size:14px}.roll-pill.high{border-color:#b6a26c}.roll-pill.low{background:#542731}.action-row{display:flex;flex-wrap:wrap;gap:7px}.action-row button{flex:1}.memory-deck{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}.memory-card{font-size:32px;font-weight:700;background:linear-gradient(135deg,#183b77,#14244c);border:2px solid #b8b7d9;min-width:55px;min-height:82px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}.memory-card small{font-size:10px;color:#f5f5ff}.reveal{padding:6px;color:var(--gold)}.guide{font-size:13px;color:#e7d1bd}.wheel-assembly{position:relative;display:grid;place-items:center;height:200px;margin:0 auto;aspect-ratio:1}.wheel-disc{height:182px;width:182px;border-radius:50%;border:5px solid #bd9d67;background:repeating-conic-gradient(from 0deg,#7c3843 0deg 22.5deg,#342a44 22.5deg 45deg,#84683e 45deg 67.5deg,#304759 67.5deg 90deg);position:relative;box-shadow:inset 0 0 0 3px #1d151e,0 3px 10px #0008;transition:transform 2.6s cubic-bezier(.12,.75,.1,1)}.wheel-disc:after{content:'✦';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;background:#1c151b;border:3px solid var(--gold);color:var(--gold);height:36px;width:36px;border-radius:50%;font-size:20px}.wheel-pointer{position:absolute;z-index:2;top:-7px;left:calc(50% - 10px);color:#ffe7a7;text-shadow:0 2px 5px black;font-size:22px}.wheel-word{position:absolute;top:calc(50% - 6px);left:calc(50% - 36px);width:72px;height:12px;transform-origin:36px 6px;font-size:8px;font-weight:800;text-align:center;text-shadow:0 1px 2px #000;color:white}.hand-caption{font-weight:800;font-size:12px;color:var(--gold)}.playing-row{display:flex;gap:6px;align-items:center;justify-content:center;max-width:100%;padding:3px 0}.card{background:#fdfaf4;border:2px solid #d7c29f;color:#202735;border-radius:8px;display:flex;align-items:center;justify-content:center;position:relative;width:clamp(39px,8vw,86px);height:clamp(57px,12vw,120px);font-weight:900;flex-shrink:0;box-shadow:0 2px 8px #0009}.card.red{color:#be2932}.card-label{z-index:1;background:#ffffffa1;border-radius:3px;padding:1px 2px;font-size:clamp(14px,2vw,23px)}.card img{position:absolute;width:100%;height:100%;object-fit:contain;border-radius:6px}.card img+.card-label{color:#000}.card.back{color:#a9c4e8;background:repeating-linear-gradient(45deg,#193b73 0 8px,#244782 8px 16px);font-size:clamp(23px,4vw,44px)}.select-card{padding:0;border:none;background:transparent;display:flex;flex-direction:column;gap:1px;align-items:center}.select-card .card{pointer-events:none}.select-card.discarded .card{border-color:#f0ac56;transform:translateY(-6px)}.select-card small{font-size:10px;font-weight:700}.showdown-rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;font-size:12px}.showdown-rows span{background:#34252b;padding:7px;border-radius:7px}.showdown-rows strong{color:var(--gold)}.winner{text-align:center;color:#ffdda3;font:bold 26px Georgia,serif;padding:10px}.splash,.fatal{padding:35px;margin:auto;text-align:center;color:var(--gold)}#toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);padding:12px 17px;border:1px solid #c4a47a;border-radius:10px;background:#302126;box-shadow:0 5px 30px #0009;z-index:99;max-width:min(95vw,550px);font-size:13px}#toast[hidden]{display:none}
+@media(max-width:650px){.top{height:59px;flex-basis:59px;padding:6px 10px}.emblem{width:35px;height:38px;font-size:22px}.brand{gap:8px}.brand-title{font-size:13px}.brand-title small{display:none}.eyebrow{font-size:9px}.top .pill{display:none}.top-actions .small-btn{font-size:11px}.main{padding:7px 7px max(6px,env(safe-area-inset-bottom))}.menu{gap:8px}.menu-heading p{font-size:11px}.menu-tiles{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:8px}.menu-tile{padding:6px;gap:4px}.menu-icon{font-size:28px}.menu-title{font-size:16px}.menu-description{font-size:10px}.menu-resume{font-size:9px}.menu-bottom{font-size:10px}.setup{gap:5px}.setup-top h1{font-size:17px}.setup-top .eyebrow{font-size:9px}.setup-options{padding:6px}.setup-options label{font-size:10px}.setup-options input,.setup-options select{height:30px;padding:5px}.roster-panel{padding:5px}.roster-heading{gap:4px}.section-title{font-size:10px}.roster-heading input{height:28px;font-size:11px}.portrait-grid{gap:4px}.portrait{padding:2px}.portrait-name{font-size:9px;min-height:2.7em}.game-screen{gap:5px}.game-name{font-size:14px}.game-name small{display:none}.game-main{gap:5px}.scene-wrap{height:38%}.game-controls{padding:6px 9px}.notice{font-size:12px;margin:3px 0}.speech{max-height:51px;font-size:10px}.game-controls button{padding:8px;font-size:12px}.wheel-assembly{height:166px}.wheel-disc{height:151px;width:151px}.wheel-word{transform:none;display:none}.wheel-pointer{top:-6px}.roll-pill{min-width:115px;padding:5px;font-size:11px}.roll-pill strong{font-size:12px}.roll-pill{gap:4px}.card{width:clamp(36px,14vw,57px);height:clamp(52px,20vw,82px)}.showdown-rows{font-size:10px}.person{padding:5px 7px}.setup-bottom{font-size:11px}}
+@media(max-width:375px), (max-height:680px){.menu-heading h1{font-size:21px}.menu-heading p{margin:3px 0}.top{height:52px;flex-basis:52px}.setup-top{max-height:44px}.setup-top h1{font-size:16px}.setup-options{padding:5px}.setup-options input,.setup-options select{height:26px}.roster-heading{height:27px}.tab{padding:4px}.portrait-name{font-size:8.5px}.game-name{font-size:13px}.scene-wrap{height:34%}.wheel-assembly{height:120px}.wheel-disc{height:112px;width:112px}}
+.wheel-result{text-align:center;color:var(--gold);font-size:13px;font-weight:800;letter-spacing:.08em;margin-bottom:3px}.memory-revealed{display:grid;place-items:center;max-height:115px}.memory-revealed img{max-height:110px;max-width:150px;object-fit:contain}.memory-revealed span{font-size:18px;color:var(--gold)}
+#toast{pointer-events:none}.dice-pair{display:flex;gap:3px;align-items:center}.dice-token{height:25px;width:25px;object-fit:contain}.dice-pair span:last-child{padding-left:4px}.memory-card img{max-width:52px;height:57px;object-fit:contain;pointer-events:none}.card.back img{object-fit:cover;opacity:.92}
+
+/* ============================================================
+   Browser Edition v1.0.2 - Android phone orientation redesign
+   Landscape: full-height composite art beside compact controls.
+   Portrait: scene above scroll-contained actions, no page scroll.
+   ============================================================ */
+@media (orientation:landscape) and (min-width:600px) and (max-height:680px) {
+  .top {height:40px;flex-basis:40px;padding:3px 10px}
+  .top .emblem {width:29px;height:29px;border-radius:7px;font-size:19px}
+  .top .brand {gap:7px}
+  .top .eyebrow,.top .pill,.brand-title small {display:none}
+  .top .brand-title {font-size:14px;white-space:nowrap}
+  .top-actions .small-btn {padding:5px 9px;font-size:11px}
+  .main {padding:5px 7px max(4px,env(safe-area-inset-bottom))}
+  .game-screen {gap:5px}
+  .game-top {height:30px;flex-basis:30px}
+  .game-top .small-btn {font-size:12px;padding:5px 9px}
+  .game-name {font-size:15px}
+  .game-name small {display:inline;font-size:10px}
+  .game-main {display:grid;grid-template-columns:minmax(0,1.9fr) minmax(255px,1fr);grid-template-rows:minmax(0,1fr);gap:7px;min-height:0;flex:1}
+  .scene-wrap {width:100%;height:100%;min-width:0;min-height:0;flex:none;align-self:stretch;border-radius:10px}
+  #scene {display:block;width:100%;height:100%;object-fit:contain}
+  .game-controls {width:100%;min-width:0;height:100%;min-height:0;flex:none;padding:7px 9px;gap:4px;overflow:hidden;border-radius:10px}
+  .turn-info {min-width:0}
+  .turn-info .eyebrow {font-size:9px;letter-spacing:.08em}
+  .notice {margin:3px 0 4px;font-size:12px;line-height:1.22}
+  .actions-scroll {min-width:0;min-height:0;flex:1;gap:5px;overflow:auto;overscroll-behavior:contain;touch-action:pan-y}
+  .game-controls button {padding:7px 8px;font-size:11px}
+  .dice-rolls {gap:4px}
+  .roll-pill {flex:1 1 calc(50% - 4px);min-width:0;gap:3px;padding:5px 6px;font-size:10px;line-height:1.2}
+  .roll-pill>span {min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .roll-pill strong {font-size:11px;flex-shrink:0}
+  .dice-token {width:21px;height:21px}
+  .action-row {gap:5px}
+  .speech {flex:0 0 auto;max-height:min(15vh,55px);font-size:10px;padding-top:4px;overflow:auto}
+  .people {flex:0 0 auto;height:29px;max-height:29px;gap:4px;overflow-x:auto;overflow-y:hidden}
+  .person {padding:3px 7px;font-size:10px;white-space:nowrap;border-radius:6px}
+  .playing-row {gap:4px;padding:0}
+  .card {width:clamp(36px,5.5vw,64px);height:clamp(51px,8vw,88px)}
+  .memory-deck {gap:5px}
+  .memory-card {min-width:42px;min-height:54px;font-size:24px}
+  .wheel-assembly {height:142px}
+  .wheel-disc {height:129px;width:129px}
+}
+/* On narrow portrait phones, keep the page fixed but allow the game
+   control panel to use its available height without clipping actions. */
+@media (orientation:portrait) and (max-width:650px) {
+  .game-controls {overflow:hidden}
+  .actions-scroll {overscroll-behavior:contain;touch-action:pan-y}
+  .game-top .small-btn {white-space:nowrap}
+}
+@media (orientation:landscape) and (min-width:600px) and (max-height:345px) {
+  .top {height:33px;flex-basis:33px}
+  .game-top {height:28px;flex-basis:28px}
+  .people {height:24px;max-height:24px}
+  .game-main {grid-template-columns:minmax(0,1.7fr) minmax(248px,1fr)}
+  .speech {max-height:40px}
+}
+
+/* v1.0.4: cards stay face down during opponents' draw turns */
+.ai-card{cursor:default;user-select:none}
+.ai-card small{color:#c6b0bd}
+.poker-showdown{display:flex;flex-direction:column;gap:7px;max-width:100%}
+.showdown-hand{display:flex;flex-direction:column;gap:4px;background:#34252b;border:1px solid #503840;padding:6px;border-radius:8px;min-width:0}
+.showdown-title{font-size:12px;display:flex;gap:7px;justify-content:space-between;flex-wrap:wrap}
+.showdown-title strong{color:var(--gold)}
+.showdown-cards{justify-content:flex-start;gap:3px}
+.showdown-cards .card{width:clamp(31px,7vw,56px);height:clamp(44px,10vw,77px);border-radius:4px}
+.showdown-cards .card-label{font-size:12px}
+/* v1.0.4: scene viewer and immersive game */
+.scene-wrap{position:relative;touch-action:manipulation}
+.scene-expand{position:absolute;top:8px;right:8px;z-index:2;border:1px solid #d5b57e99;border-radius:8px;background:#24171fd9;color:#f8e9cb;font-weight:700;font-size:12px;padding:7px 9px;box-shadow:0 2px 12px #0008}
+.scene-expand:focus-visible{outline:3px solid #efd1a2}
+#app.immersive .top,#app.immersive .game-top,#app.immersive .people{display:none!important}
+#app.immersive .main{flex:1;min-height:0;padding:3px}
+#app.immersive .game-screen{height:100%;min-height:0}
+#app.immersive .scene-wrap{height:52%}
+@media(orientation:landscape) and (min-width:600px){
+ #app.immersive .game-main{height:100%;min-height:0}
+ #app.immersive .scene-wrap{height:100%}
+}
+.scene-view{position:fixed;inset:0;z-index:1000;display:flex;flex-direction:column;background:#09070b;color:#f8ead9;overscroll-behavior:contain}
+.scene-view:fullscreen{height:100%;width:100%;background:#09070b}
+.scene-view-toolbar{flex:0 0 auto;display:flex;gap:5px;flex-wrap:wrap;align-items:center;justify-content:center;padding:7px max(6px,env(safe-area-inset-right)) 7px max(6px,env(safe-area-inset-left));background:#26191f;border-bottom:1px solid #6b4951}
+.scene-view-toolbar button{border:1px solid #a7827f;border-radius:8px;background:#442b32;color:#f2e8dd;padding:8px 11px;font-size:13px;font-weight:700;min-width:37px}
+.scene-view-toolbar button.primary{background:#713440;color:#fff}
+.scene-view-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;touch-action:pan-x pan-y;padding:0}
+.scene-view-zoom{position:relative;width:100%;min-width:0;margin:auto;transition:none}
+.scene-view-zoom img{display:block;width:100%;height:auto;max-width:none;user-select:none;-webkit-user-drag:none}
+.scene-view-hint{flex:0 0 auto;padding:5px 8px max(5px,env(safe-area-inset-bottom));font-size:11px;text-align:center;color:#dcc29f;background:#26191f}
+@media(orientation:portrait){.scene-view-scroll{display:flex;flex-direction:column;justify-content:safe center}.scene-view-zoom{flex:0 0 auto}}
+@media(orientation:landscape) and (max-height:500px){.scene-view-toolbar{padding:3px 6px;gap:4px}.scene-view-toolbar button{padding:5px 8px;font-size:11px}.scene-view-hint{padding:2px 5px;font-size:9px}}
+
+
+/* === Browser Edition v1.1: compact game panels and deliberate mobile pacing === */
+.turn-meta{display:flex;align-items:center;justify-content:space-between;gap:7px;min-width:0}
+.turn-meta .eyebrow{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ai-switch{flex-shrink:0;border:1px solid #b89a61;color:#f2d6a3;background:#3c2930;padding:5px 7px;border-radius:8px;font-size:11px;font-weight:750;line-height:1.2}
+.ai-switch:hover{background:#53313a}
+.turn-hint{border-left:3px solid #c4a267;background:#39292a;color:#ead2ac;padding:5px 8px;font-size:11px;line-height:1.25;border-radius:3px 7px 7px 3px;margin-top:3px}
+.game-controls .notice{line-height:1.27;margin:4px 0 2px}
+.game-controls .speech{background:#302126;border:1px solid #65454a;border-left:3px solid #be9b65;border-radius:7px;margin:0;padding:6px 8px;max-height:min(15vh,85px);font-size:12px;line-height:1.35;overflow:auto}
+.game-controls .actions-scroll{gap:6px}
+.settings-subhead{color:var(--gold);border-top:1px solid #5e4147;margin:16px 0 10px;padding-top:12px;font-weight:800;font-size:14px}
+/* Portrait: controls consume only as much height as required, so the
+   composite gets the remainder instead of a half-empty control box. */
+@media (orientation:portrait) and (max-width:650px){
+ .game-main{display:flex;flex-direction:column;min-height:0}
+ #app .game-screen .scene-wrap{height:auto;min-height:25%;flex:1 1 0;max-height:none}
+ #app .game-screen .game-controls{height:auto;min-height:105px;max-height:65%;flex:0 1 auto;overflow:hidden;gap:5px;padding:7px 10px}
+ #app .game-screen .actions-scroll{flex:0 1 auto;min-height:0;max-height:39dvh;overflow:auto}
+ #app .game-screen .speech{max-height:12dvh;font-size:11px;padding:5px 7px}
+ #app .game-screen .turn-hint{font-size:10px;padding:4px 6px}
+ #app.immersive .game-screen .scene-wrap{height:auto;flex:1 1 0}
+}
+@media (orientation:landscape) and (min-width:600px) and (max-height:680px){
+ .game-controls .turn-hint{font-size:10px;padding:3px 6px;margin-top:2px}
+ .game-controls .speech{font-size:10px;padding:3px 6px;max-height:53px;line-height:1.2}
+ .game-controls .ai-switch{font-size:10px;padding:3px 5px}
+ .game-controls .notice{line-height:1.18;margin:2px 0}
+ .game-controls .actions-scroll{flex:1 1 auto;max-height:none}
+}
+@media (max-width:375px), (max-height:680px){.game-controls .ai-switch{padding:3px 5px;font-size:10px}}
+/* Keep portrait composite at its native 2:1 aspect ratio. Without this,
+   a compact action panel makes the image's container grow very tall,
+   letterboxing the actual characters in an almost-empty scene. */
+@media (orientation:portrait) and (max-width:650px){
+ #app .game-screen .scene-wrap{aspect-ratio:2/1;height:auto;min-height:0;max-height:min(42dvh,420px);flex:0 0 auto;align-self:stretch}
+ #app .game-screen .game-controls{flex:0 0 auto;max-height:min(63dvh,520px)}
+ #app .game-screen .actions-scroll{max-height:min(38dvh,390px)}
+ #app.immersive .game-screen .scene-wrap{height:auto;flex:0 0 auto}
+}
+
+/* v1.1: optional short in-game history, inside the controls, never body scroll */
+.recent-log{font-size:11px;color:#dac1ac;border-top:1px solid #513b3d;padding-top:6px;margin-top:3px}
+.recent-log summary{cursor:pointer;font-weight:750;color:#eacb94;padding:2px 0;touch-action:manipulation}
+.recent-log ol{margin:5px 0 2px;padding-left:18px;line-height:1.35}
+.recent-log li{padding:2px 0}
+@media (orientation:portrait) and (max-width:650px){
+ .game-controls .card{width:clamp(40px,15.5vw,65px);height:clamp(57px,22vw,91px)}
+ .game-controls .dice-token{height:29px;width:29px}
+}
+
+/* ===============================================
+   v1.2: one unified scene-first layout across SIX modes.
+   All page scrolling remains disabled; interactive cards and
+   details scroll within their own allocated mobile panels.
+   =============================================== */
+#app .main.game-only{flex:1;min-height:0;padding:env(safe-area-inset-top) max(5px,env(safe-area-inset-right)) max(4px,env(safe-area-inset-bottom)) max(5px,env(safe-area-inset-left));overflow:hidden}
+#app .unified-game{height:100%;width:100%;max-width:1480px;margin:auto;display:flex;flex-direction:column;gap:5px;position:relative;min-height:0}
+#app .unified-game .game-top{height:43px;flex:0 0 43px;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:0 4px}
+#app .unified-game .game-name{font-size:clamp(16px,3.7vw,22px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center}
+#app .unified-game .game-top button{height:38px;padding:4px 12px;min-width:57px;font-size:13px}
+#app .unified-game .game-main{display:flex;flex-direction:column;flex:1;gap:6px;min-height:0;overflow:hidden}
+#app .unified-game .scene-wrap{height:auto;aspect-ratio:2/1;max-height:min(42dvh,380px);min-height:0;flex:0 0 auto;align-self:stretch;position:relative;border-radius:12px;background:#150e13}
+#app .unified-game .scene-wrap #scene{display:block;width:100%;height:100%;object-fit:contain}
+#app .unified-game .scene-expand{font-size:15px;top:6px;right:6px;padding:6px 10px;min-width:36px;min-height:33px}
+#app .unified-game .game-controls{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;max-height:none;height:auto;padding:9px 10px 6px;border-radius:12px;gap:5px;overflow:hidden}
+#app .unified-game .turn-info{flex:0 0 auto;min-height:0}
+#app .unified-game .turn-meta{gap:5px}
+#app .unified-game .turn-meta .eyebrow{font-size:10px;letter-spacing:.10em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#app .unified-game .turn-info .notice{font-size:clamp(12px,3.25vw,16px);line-height:1.25;margin:4px 0 2px;font-weight:700}
+#app .unified-game .ai-switch{padding:4px 9px;font-size:11px;min-height:30px}
+#app .unified-game .compact-speech{flex:0 0 auto;max-height:45px;font-size:12px;line-height:1.35;padding:5px 8px;margin:0;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+#app .unified-game .compact-speech b{color:var(--gold)}
+#app .unified-game .actions-scroll{flex:1 1 auto;min-height:0;max-height:none;overflow:auto;overscroll-behavior:contain;touch-action:pan-y;scrollbar-width:thin;gap:7px;padding:3px 1px 4px}
+#app .unified-game .actions-scroll button{min-height:43px;font-size:clamp(12px,3vw,15px);font-weight:700}
+#app .unified-game .primary-dock{flex:0 0 auto;padding:2px 0 1px;background:linear-gradient(transparent,#21171b 10%)}
+#app .unified-game .primary-dock .primary{width:100%;min-height:48px;font-weight:800;font-size:clamp(14px,3.5vw,17px);border-color:#cfaaa0}
+#app .unified-game .game-toolbar{height:43px;flex:0 0 43px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;padding-bottom:2px}
+#app .unified-game .game-toolbar button{background:#332228;border:1px solid #715054;border-radius:9px;padding:5px 1px;color:#ead8bd;font-size:11px;font-weight:700;min-width:0;white-space:nowrap}
+#app .unified-game .game-toolbar button:active{background:#63404b}
+#app .unified-game .playing-row{max-width:100%;gap:clamp(3px,.9vw,9px);padding:2px 0;justify-content:center}
+#app .unified-game .card{width:clamp(41px,16vw,85px);height:clamp(59px,23vw,119px);flex:0 1 auto;min-width:0;overflow:hidden}
+#app .unified-game .card .card-label{font-size:clamp(13px,3vw,18px)}
+#app .unified-game .playing-row .select-card{min-width:0;flex:0 1 19%;padding:0 0 3px;display:flex;flex-direction:column;align-items:center}
+#app .unified-game .playing-row .select-card .card{width:100%;height:auto;aspect-ratio:5/7}
+#app .unified-game .playing-row .select-card small{font-size:10px}
+#app .unified-game .playing-row .select-card.discarded{border-color:#e8b369;box-shadow:0 0 0 2px #e8b36980}
+#app .unified-game .dice-rolls{gap:6px}
+#app .unified-game .roll-pill{min-height:39px}
+#app .unified-game .dice-token{width:33px;height:33px}
+#app .unified-game .wheel-assembly{flex:0 0 auto;height:min(31dvh,205px)}
+#app .unified-game .wheel-disc{width:min(29dvh,192px);height:min(29dvh,192px)}
+#app .unified-game .memory-card{min-height:56px;min-width:45px}
+#app .unified-game .action-row{gap:7px}
+#app .unified-game .recent-log{display:none}
+#app .drawer-shade{position:fixed;inset:0;background:#080508b9;z-index:180;cursor:pointer}
+#app .game-drawer{position:fixed;left:max(5px,env(safe-area-inset-left));right:max(5px,env(safe-area-inset-right));bottom:max(5px,env(safe-area-inset-bottom));z-index:181;max-height:72dvh;overflow:auto;padding:14px;background:#2b1c22;border:1px solid #b48d70;box-shadow:0 -12px 50px #0009;border-radius:18px 18px 12px 12px}
+#app .drawer-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px;color:var(--gold);font-size:17px}
+#app .drawer-head button{width:40px;height:37px;padding:0;font-size:19px}
+#app .drawer-players{display:grid;gap:7px}
+#app .drawer-players>div{display:flex;justify-content:space-between;gap:15px;padding:11px;border:1px solid #68515a;border-radius:9px}
+#app .drawer-players span{color:var(--gold)}
+#app .drawer-quote{font-size:17px;line-height:1.6;color:#f5e4cf;padding:8px}
+#app .drawer-history{margin:0;padding:0 6px 0 24px;line-height:1.55}
+#app .drawer-history li{padding:9px 4px;border-bottom:1px solid #574046}
+#app .drawer-settings{display:grid;gap:9px}
+#app .drawer-settings button{min-height:47px;font-size:14px;text-align:left}
+#app .unified-game.solo-game .scene-wrap{aspect-ratio:3/4;max-height:min(49dvh,440px);align-self:center;width:min(100%,340px)}
+#app .unified-game.solo-game .scene-wrap canvas{object-fit:contain}
+#app .unified-game .one-prompt{font-size:13px;color:#f2d3a2;margin:3px 0 6px}
+#app .unified-game .one-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+#app .unified-game .one-choices button{padding:10px 2px;font-size:12px;min-height:50px}
+#app .unified-game .one-advance{width:100%;min-height:49px;margin-top:6px}
+#app .unified-game.solo-game .compact-speech{max-height:76px;-webkit-line-clamp:3}
+#app .solo-setup .roster-panel{min-height:0;flex:1;overflow:hidden}
+#app .solo-setup .setup-bottom span{font-size:10px}
+@media (orientation:portrait) and (max-width:650px){
+ #app .unified-game .game-main{min-height:0;display:flex;flex-direction:column}
+ #app .unified-game .scene-wrap{flex:0 0 auto;max-height:min(37dvh,320px);width:100%;height:auto;aspect-ratio:2/1}
+ #app .unified-game .game-controls{flex:1 1 auto;min-height:0;max-height:none;height:auto;padding:8px}
+ #app .unified-game .actions-scroll{flex:1 1 auto;max-height:none;overflow-y:auto}
+ #app .unified-game.solo-game .scene-wrap{width:min(75vw,335px);max-height:min(46dvh,395px);aspect-ratio:3/4}
+}
+@media (orientation:landscape) and (min-width:600px){
+ #app .unified-game .game-top{height:35px;flex-basis:35px}
+ #app .unified-game .game-top button{height:31px;min-width:58px;font-size:11px}
+ #app .unified-game .game-main{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(258px,1fr);grid-template-rows:minmax(0,1fr);min-height:0;flex:1;gap:6px}
+ #app .unified-game .scene-wrap{width:100%;height:100%;max-height:none;min-height:0;aspect-ratio:auto;align-self:stretch;flex:1}
+ #app .unified-game .game-controls{width:100%;height:100%;min-height:0;max-height:none;padding:6px 9px;gap:3px;flex:1;overflow:hidden}
+ #app .unified-game .game-controls .turn-info .notice{font-size:12px;margin:2px 0}
+ #app .unified-game .compact-speech{font-size:10px;max-height:33px;-webkit-line-clamp:2;padding:2px 6px}
+ #app .unified-game .actions-scroll{min-height:0;max-height:none;flex:1 1 auto;gap:5px}
+ #app .unified-game .actions-scroll button{min-height:31px;font-size:11px;padding:5px}
+ #app .unified-game .primary-dock .primary{min-height:39px;font-size:12px;padding:6px}
+ #app .unified-game .game-toolbar{height:28px;flex-basis:28px}
+ #app .unified-game .game-toolbar button{font-size:10px;padding:2px}
+ #app .unified-game .turn-meta .eyebrow{font-size:9px}
+ #app .unified-game .card{width:clamp(30px,5.5vw,65px);height:clamp(42px,8vw,87px)}
+ #app .unified-game .playing-row .select-card .card{width:100%;height:auto}
+ #app .unified-game .playing-row .select-card small{font-size:8px}
+ #app .unified-game .dice-token{width:24px;height:24px}
+ #app .unified-game .wheel-assembly{height:135px}
+ #app .unified-game .wheel-disc{width:122px;height:122px}
+ #app .unified-game.solo-game .game-main{grid-template-columns:minmax(0,1.45fr) minmax(260px,1fr)}
+ #app .unified-game.solo-game .scene-wrap{max-height:none;height:100%;width:100%;aspect-ratio:auto;align-self:stretch}
+ #app .unified-game.solo-game .scene-wrap #scene{height:100%;width:100%;object-fit:contain}
+ #app .unified-game .game-drawer{left:20%;right:20%;max-height:90dvh}
+}
+@media (max-height:530px) and (orientation:portrait){
+ #app .unified-game .scene-wrap{max-height:30dvh}
+ #app .unified-game.solo-game .scene-wrap{max-height:36dvh}
+}
+#app.immersive .unified-game .game-top,#app.immersive .unified-game .game-toolbar{display:none!important}
+#app.immersive .unified-game .game-main{height:100%;flex:1;min-height:0}
+
+/* v1.2.1: one-on-one displays every currently legal garment choice. */
+#app .unified-game .one-removal-label{margin:10px 0 5px;color:var(--gold);font-weight:750;font-size:13px}
+#app .unified-game .one-removal-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,185px),1fr));gap:8px}
+#app .unified-game .one-removal-options .solo-remove{min-height:49px;width:100%;background:#6b343c;border:1px solid #bd8c84;color:#fff;font-weight:800;padding:10px 12px;white-space:normal;text-align:center;line-height:1.2}
+#app .unified-game .one-removal-options .solo-remove:active{background:#86404d}
+#app .unified-game .one-removal-options .one-advance{grid-column:1/-1;margin-top:0}
+@media (max-width:650px){#app .unified-game .one-removal-options{grid-template-columns:repeat(2,minmax(0,1fr))}#app .unified-game .one-removal-options .solo-remove{font-size:12px;min-height:53px;padding:8px 5px}}
+@media (max-height:470px) and (orientation:landscape){#app .unified-game .one-removal-options .solo-remove{min-height:40px;padding:6px 7px;font-size:11px}}
+
+/* Official desktop Compendium branding, rather than a generic emblem. */
+.top .brand{display:flex;align-items:center;gap:11px;min-width:0}
+.top .compendium-header-logo{display:block;width:clamp(122px,25vw,205px);height:auto;max-height:54px;object-fit:contain;flex:0 0 auto}
+.top .brand-subtitle{font:700 clamp(11px,1.25vw,17px) Georgia,serif;color:var(--gold);letter-spacing:.03em;white-space:nowrap}
+.top .brand-subtitle small{font:11px system-ui;color:var(--mute);font-weight:400}
+.solo-setup .setup-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 9px;align-items:center}
+.solo-setup .setup-bottom .solo-visitor-gender{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--gold);font-size:12px;font-weight:650}
+.solo-setup .solo-visitor-gender select{min-width:125px;max-width:65%;padding:7px 12px;height:36px;color:var(--text);border:1px solid #72545a;border-radius:8px;background:#2a2023;font-size:12px}
+.solo-setup .setup-bottom>span{min-width:0}
+@media(max-width:650px){.top .compendium-header-logo{width:125px;max-height:46px}.top .brand-subtitle{font-size:10px}.top .brand-subtitle small{display:none}}
+@media(max-width:380px){.top .compendium-header-logo{width:118px}.top .brand-subtitle{font-size:9px}.top .brand{gap:4px}}
+@media(max-height:470px) and (orientation:landscape){.top .compendium-header-logo{width:95px;max-height:30px}.top .brand-subtitle{font-size:9px}.solo-setup .solo-visitor-gender select{height:28px}}
+
+/* v1.2.3 — Solo booth: no clipped dialogue.
+   The complete quote stays in the existing internally scrollable action region.
+   The browser document is still fixed; only the controls region may scroll. */
+#app .unified-game.solo-game .actions-scroll{overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;min-height:0;flex:1 1 auto;display:flex;flex-direction:column;align-items:stretch;gap:8px}
+#app .unified-game.solo-game .actions-scroll .solo-full-speech{
+  display:block!important;max-height:none!important;min-height:0;overflow:visible!important;
+  -webkit-line-clamp:unset!important;-webkit-box-orient:initial!important;
+  flex:0 0 auto;white-space:normal;overflow-wrap:break-word;
+  font-size:clamp(12px,3vw,15px);line-height:1.45;
+  padding:9px 11px;margin:0;border-left:3px solid var(--gold);border-top:0;
+  background:rgba(104,65,69,.20);border-radius:8px;color:#f0ddd3;
+}
+#app .unified-game.solo-game .solo-full-speech b{color:var(--gold)}
+@media (orientation:landscape) and (min-width:600px){
+ #app .unified-game.solo-game .actions-scroll .solo-full-speech{font-size:clamp(11px,1.4vw,14px);padding:6px 9px;line-height:1.35}
+}
+
+/* v1.3: Compendium card assets and two new mobile modes */
+#app .unified-game .memory-card{background:#25171e;border-color:#bd9963;min-width:clamp(60px,12vw,104px);min-height:clamp(89px,19vw,146px);overflow:hidden;padding:3px;}
+#app .unified-game .memory-card img{width:100%;height:clamp(75px,17vw,130px);max-width:100%;object-fit:contain;opacity:1;}
+#app .unified-game .card.back{background:#23161c;border-color:#d6b477;color:#e8cfaa;overflow:hidden;}
+#app .unified-game .card.back img{object-fit:cover;width:100%;height:100%;opacity:1;}
+#app .unified-game .memory-revealed img{max-height:clamp(170px,39vh,310px);max-width:min(78%,250px);object-fit:contain;}
+.missing-card-art{font-size:9px;line-height:1.2;color:#e7c590;max-width:80px;word-break:break-word;text-align:center;display:inline-block;}
+.rps-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:5px 0 10px;}
+.rps-choices button{display:grid;justify-items:center;gap:5px;padding:12px 5px;font-size:clamp(14px,2.2vw,19px);}
+.rps-icon{max-width:75px;max-height:72px;object-fit:contain;}
+.rps-result{display:flex;justify-content:space-around;align-items:center;gap:8px;padding:8px 0;}
+.rps-result>span{display:grid;justify-items:center;gap:4px;min-width:0;text-align:center;flex:1;font-size:12px;}
+.rps-result>span small{color:var(--gold);font-size:12px;}
+.rps-result b{font-size:35px;}
+.mayhem-preview{padding:14px;border:1px solid #b49463;border-radius:10px;color:#eddfc6;background:#332025;font-size:clamp(14px,2vw,18px);line-height:1.5;}
+@media(max-width:540px){.rps-choices button{padding:10px 3px;}.rps-icon{max-height:54px;}.rps-result b{font-size:27px;}}
+
+/* v1.3.1 — Memory: five-player setup, readable reveals and distinct AI turns. */
+#app .memory-setup .memory-setup-options{display:grid;gap:8px;overflow:auto;flex:0 0 auto;max-height:33dvh;padding:8px 11px;}
+#app .memory-setup .memory-identity{display:flex;align-items:center;gap:10px;min-width:0;}
+#app .memory-setup .memory-identity>label{display:flex;flex-direction:column;min-width:92px;gap:2px;flex:0 0 105px;font-size:11px;}
+#app .memory-setup .memory-identity select{min-height:31px;background:#302329;color:#fff;border:1px solid #82605c;border-radius:7px;}
+#app .memory-setup .memory-avatar-preview{display:flex;align-items:center;gap:7px;flex:1;min-width:0;}
+#app .memory-setup .memory-avatar-preview>span:last-child{min-width:0;display:grid;gap:3px;}
+#app .memory-setup .memory-avatar-preview strong{color:var(--gold);font-size:12px;}
+#app .memory-setup .memory-avatar-preview small{font-size:10px;line-height:1.24;}
+#app .memory-setup .memory-avatar-pic{width:55px;height:70px;flex:0 0 55px;display:grid;place-items:center;background:#1c1319;border:1px solid #745052;border-radius:6px;overflow:hidden;}
+#app .memory-setup .memory-avatar-pic img{width:100%;height:100%;object-fit:contain;}
+#app .memory-setup .memory-ai-setup{display:flex;align-items:center;justify-content:space-between;gap:9px;color:#dccbbd;font-size:11px;}
+#app .memory-setup .memory-ai-setup span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+#app .memory-setup .memory-background-label{display:flex;align-items:center;gap:10px;color:#dfc8b5;font-size:11px;}
+#app .memory-setup .memory-background-label select{min-width:0;max-width:230px;flex:1;}
+#app .memory-setup .portrait:disabled{opacity:.35;}
+#app .unified-game{position:relative;}
+#app .unified-game .memory-turn-title{color:#ecd29c;font-weight:700;}
+#app .unified-game .memory-deck .memory-card{flex:0 1 clamp(56px,12vw,100px);min-width:0;}
+#app .memory-reveal-overlay{position:absolute;inset:0;z-index:25;background:rgba(13,8,11,.97);display:flex;align-items:center;justify-content:center;border:1px solid #977458;border-radius:12px;overflow:hidden;padding:clamp(8px,1.5vw,16px);}
+#app .memory-reveal-stage.large-reveal{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;gap:7px;min-height:0;}
+#app .memory-reveal-heading{display:grid;justify-items:center;gap:3px;text-align:center;flex:0 0 auto;}
+#app .memory-reveal-heading strong{font:700 clamp(15px,2.6vw,23px) Georgia,serif;color:#f7e1bc;}
+#app .memory-reveal-heading small{font-size:clamp(10px,1.4vw,13px);color:#cbbdb1;}
+#app .memory-reveal-art{flex:1;min-height:0;min-width:0;display:flex;justify-content:center;align-items:center;width:100%;}
+#app .memory-reveal-art img{height:100%;max-height:100%;max-width:100%;object-fit:contain;filter:drop-shadow(0 5px 15px #000c);}
+#app .memory-reveal-continue{display:flex;justify-content:center;width:min(100%,440px);flex:0 0 auto;}
+#app .memory-reveal-continue button{width:100%;min-height:44px;font-weight:750;font-size:clamp(12px,2vw,16px);}
+#app .memory-choice-heading{display:grid;gap:3px;color:#f2e2c7;}
+#app .memory-choice-heading small{font-size:11px;color:var(--gold);}
+#app .memory-choice-thumb{display:grid;place-items:center;min-height:70px;max-height:clamp(86px,18vh,150px);}
+#app .memory-choice-thumb img{max-width:100%;max-height:clamp(85px,17vh,146px);object-fit:contain;}
+#app .memory-penalties{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;}
+#app .memory-penalties .primary{grid-column:1/-1;}
+#app .missing-memory-face{display:grid;gap:8px;place-items:center;max-width:90%;min-height:90px;padding:16px;border:1px solid #a48757;border-radius:12px;color:#f5d7ad;text-align:center;}
+#app .missing-memory-face small{color:#d9b89f;overflow-wrap:anywhere;}
+@media(orientation:portrait) and (max-width:650px){
+ #app .memory-setup .memory-setup-options{max-height:31dvh;padding:6px;}
+ #app .memory-setup .memory-identity{flex-wrap:wrap;gap:6px;}
+ #app .memory-setup .memory-identity>label{flex-basis:80px;}
+ #app .memory-setup .memory-identity>button{padding:6px;flex:0 0 auto;}
+ #app .memory-setup .memory-avatar-pic{width:44px;height:55px;flex-basis:44px;}
+ #app .memory-setup .memory-avatar-preview small{font-size:9px;}
+ #app .memory-reveal-overlay{inset:0;padding:9px;}
+}
+@media(orientation:landscape) and (max-height:520px){
+ #app .memory-reveal-overlay{padding:5px 12px;}
+ #app .memory-reveal-heading{gap:1px;}
+ #app .memory-reveal-continue button{min-height:32px;padding:4px;}
+ #app .memory-setup .memory-setup-options{max-height:26dvh;}
+}
